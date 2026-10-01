@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Oliveira — Arquitetura residencial contemporânea</title>
+<meta name="theme-color" content="#ece9e2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Studio Oliveira — Arquitetura residencial contemporânea">
+<meta property="og:image" content="assets/video/hero-poster.jpg">
+<meta name="description" content="Escritório de arquitetura residencial contemporânea. Conteúdo de demonstração.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<!-- Tailwind via CDN (demonstração). Para produção, veja README: compile o CSS e remova estas duas linhas -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tw-config.js"></script>
+</head>
+<body class="bg-bg font-sans leading-relaxed text-ink antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-bg focus:px-3 focus:py-2 focus:text-sm">Ir para o conteúdo</a>
+<header id="hd" class="fixed inset-x-0 top-0 z-30 flex items-center justify-between px-pad pb-[1.4rem] pt-[calc(1.4rem+env(safe-area-inset-top,0px))] text-[#f3f0e9]">
+  <a href="#/" class="font-serif text-[1.05rem] tracking-[.14em]" aria-label="Studio Oliveira, início">STUDIO OLIVEIRA</a>
+  <nav class="hidden gap-10 text-[.85rem] md:flex" aria-label="Principal">
+    <a class="ul" href="#projetos">Projetos</a><a class="ul" href="#studio">Studio</a><a class="ul" href="#servicos">Serviços</a><a class="ul" href="#contato">Contato</a>
+  </nav>
+  <button id="bg" class="min-h-11 min-w-11 cursor-pointer text-[.85rem] md:hidden" aria-expanded="false" aria-controls="mn">Menu</button>
+</header>
+<div class="menu fixed inset-0 z-40 flex flex-col justify-between bg-ink px-pad pb-10 pt-[calc(1.4rem+env(safe-area-inset-top,0px))] text-bg" id="mn" role="dialog" aria-label="Menu" aria-modal="true">
+  <div class="flex items-center justify-between"><span class="font-serif text-[1.05rem] tracking-[.14em]">STUDIO OLIVEIRA</span><button id="mc" class="min-h-11 cursor-pointer">Fechar</button></div>
+  <div><a class="block py-1 font-serif text-[clamp(2.6rem,12vw,4.5rem)] font-light leading-[1.15]" href="#projetos">Projetos</a><a class="block py-1 font-serif text-[clamp(2.6rem,12vw,4.5rem)] font-light leading-[1.15]" href="#studio">Studio</a><a class="block py-1 font-serif text-[clamp(2.6rem,12vw,4.5rem)] font-light leading-[1.15]" href="#servicos">Serviços</a><a class="block py-1 font-serif text-[clamp(2.6rem,12vw,4.5rem)] font-light leading-[1.15]" href="#contato">Contato</a></div>
+  <p class="text-[.8rem] text-[#9a9b94]">Conteúdo de demonstração</p>
+</div>
+<main id="main"></main>
+<div class="cur" id="cur" aria-hidden="true"></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galeria">
+  <div class="bar"><span id="lc">01 / 01</span><button id="lx" aria-label="Fechar galeria">Fechar (Esc)</button></div>
+  <div class="stage" id="ls"></div>
+  <div class="foot"><button id="lp" aria-label="Imagem anterior">← Anterior</button><button id="ln" aria-label="Próxima imagem">Próxima →</button></div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
